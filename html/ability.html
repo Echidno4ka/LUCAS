@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../styles/styles.css">
+		<script src="libs/gsap/gsap.min.js" defer></script>
+		<script src="../libs/gsap/ScrollSmoother.min.js" defer></script>
+		<script src="../libs/gsap/ScrollTrigger.min.js" defer></script>
+		<script src="../libs/script.js" defer></script>
+		<title>СПОСОБНОСТИ</title>
+	</head>
+
+	<body>
+		<header class="main_header">
+			<div class="navbar" style="position: fixed;">
+				<a href="index.html">ГЛАВНАЯ</a>
+				<a href="bio.html">О ПЕРСОНАЖЕ</a>
+				<a href="magic.html">МАГИЯ</a>
+				<a href="ability.html">СПОСОБНОСТИ</a>
+			</div>
+			<div class="layers">
+				<div class="layer__header">
+					<div class="layers__title">СПОСОБНОСТИ</div>
+				</div>
+				<div class="layers__lore_fore" style="background-image: url(../add/able.jpg);"></div>
+				<div class="layers__lore_back" style="background-image: url(../add/able.jpg);"></div>
+			</div>
+		</header>
+
+		<h3 style="margin-top: 20vh;">
+			Пассивные навыки
+		</h3>
+		<div class="blyat">
+			<hr id="allhr">
+		</div>
+
+		<div class="chcard">
+			<p class="nmp" style="text-align: left;"><span id="ability" style="color: #a261db;">Фатализм</span>: <span style="font-weight: bold; color: #15dbeb;">События</span>
+				что имеют <span style="font-weight: bold; color: #caed00;">ШАНС</span>
+				навредить <span id="lucas">Лукасу</span> напрямую или косвенно,
+				теряют в вероятности и заменяются <span style="font-weight: bold; color: #15dbeb;">событиями</span> с более
+				высоким <span style="font-weight: bold; color: #caed00;">шансом</span>
+				(Они безвредны или несут меньший вред,
+				т.к. все вредные <span style="font-weight: bold; color: #15dbeb;">события</span> уже получили понижение <span
+					style="font-weight: bold; color: #caed00;">шанса</span>). Ввиду особенности природы
+				<span id="lucas">Лукаса</span>, данная способность влияет лишь на те события что классифицируется как <span
+					id="lucas" style="color: #30eee2;">магическое</span>.
+				Имеет наивысший приоритет среди способностей <span id="lucas">Лукаса</span>,
+				поэтому он неспособен навредить самому себе своими же силами.
+				<br><span id="ability" style="color: #8d67ac;">Крон-Фортуна</span>: при возникновении <span
+					style="font-weight: bold; color: #15dbeb;">событий</span> и/или цепочек
+				оных что ведут к уничтожению <span style="font-weight: bold; color: red;">СС</span>, <span
+					id="lucas">Лукаса</span> или чего либо что является
+				частью вышеописанных объектов(не беря в расчет такие вещи как имущество), события складываются благоприятным для
+				<span id="lucas">Лукаса</span> способом,
+				отменяя причину и следствие неудачного для обладателя навыка исхода
+				<br><span id="ability" style="color: #d061db;">Рефлексия</span>: <span id="lucas">Лукас</span> осведомлен о <span
+					style="font-weight: bold; color: #15dbeb;">событиях</span>
+				и/или <span style="font-weight: bold; color: #15dbeb;">цепочках событий</span> в радиусе <span
+					style="font-weight: bold; color: #a4a6a8;">80м</span> от себя,
+				получая обработанную в удобный для восприятия вид информацию из <span
+					style="font-weight: bold; color: red;">СС</span>.
+				Потенциально радиус неограничен ибо <span style="font-weight: bold; color: red;">СС</span> не привязан к
+				определенной местности. Лишь ограничения на вычислительную
+				мощь мешает <span id="lucas">Лукасу</span> владеть данной силой на полную.
+			</p>
+		</div>
+		<h3 style="margin-top: 10vh;">
+			Активные навыки
+		</h3>
+		<div class="blyat">
+			<hr id="allhr">
+		</div>
+
+		<div class="chcard">
+			<p class="nmp" style="text-align: left;"><span id="ability" style="color: #a9033f;">Нигилизм</span>: Активация через мысленный приказ.
+				Визуальный контакт необязателен.
+				<span style="font-weight: bold; color: #15dbeb;">События</span> и/или цепочка<span
+					style="font-weight: bold; color: #15dbeb;">событий</span> что ведут к успеху действий цели, не будут воплощены
+				из <span style="font-weight: bold; color: red;">СС</span> в реальность, заменяясь на абсолютно провальные
+				аналоги.
+				<br><span style="font-style: italic;">К примеру: Стрела не вылетит из лука; тетива лопнет или же стрела выпадет
+					из рук стрелка</span>
+				<br><span id="ability" style="color: #a95103;">Расхищение</span>: Активация через мысленный приказ. Визуальный контакт обязателен. Выделенная область лишается почти
+				всех происходящих в ней <span
+				style="font-weight: bold; color: #15dbeb;">событий</span> путем оттягивания <span
+				style="font-weight: bold; color: #d72987;">момента</span> до определенной точки во времени. Ограничен радиусом
+				<span id="ability" style="color: #d061db;">Рефлексии</span>.
+
+				<br><span id="ability" style="color: #6aa903;">Конъюнктура</span>: Активация через мысленный приказ. Визуальный контакт необязателен. Выделенная область или цель,
+				подвергается насильному вмешательству в ход событий,
+				воплощая избранные <span id="lucas">Лукасом</span> <span style="font-weight: bold; color: #15dbeb;">cобытия</span> и/или их цепи в указанной области.
+				Эффект достигается за счет изменения как <span
+				style="font-weight: bold; color: #d72987;">момента</span> так и <span
+				style="font-weight: bold; color: #caed00;">шанса</span> <span style="font-weight: bold; color: #15dbeb;">cобытия</span>. Также ограничен <span id="ability" style="color: #d061db;">Рефлексией</span>.
+			</p>
+		</div>
+		<h3 style="margin-top: 10vh;">
+			Другие умения
+		</h3>
+		<div class="blyat">
+			<hr id="allhr">
+		</div>
+		<div class="chcard">
+			<p class="nmp" style="text-align: left;">
+				<br><span id="ability" style="color: #a261db;">Обращение с оружием</span> — базовый уровень подготовки курса молодого бойца. Умеет обращаться с холодным оружием типа "боевой нож" и огнестрельными видами вооружения.
+					Пистолет, самозарядный карабин и ручной пулемёт.
+					<br><span id="ability" style="color: #a261db;">Инженерия</span> — имеет уровень базового понимания принципов механики, 
+					механизмов и примитивных электрических устройств. Обладает знаниями о электросетях, анатомии, свойствах материалов и их поведений в различных средах.
+					<br><span id="ability" style="color: #a261db;">Клерк</span> — умело манипулирует и справляется с различными бумагами и документами, хорошие навыки письма и арифметики. Владеет принципами алгоритмизации сложных процессов.
+			</p>
+		</div>
+		<h3 style="margin-top: 10vh;">
+			Снаряжение
+		</h3>
+		<div class="blyat">
+			<hr id="allhr">
+		</div>
+		<div class="chcard">
+			<p class="nmp" style="text-align: left;">
+				<br><span id="ability" style="color: #40a53a;">.40 Hiker</span> — самозарядный пистолет армейского образца. <br>Калибр: 10мм.<br> Прицельная дальность: 100м. <br>Скорость пули: 510м/с. <br>В наличии 1 снаряженный магазин на 16 патронов, 46 патронов в подсумке.
+				<br><span id="ability" style="color: #40a53a;">Плащ палатка</span> — Брезентовая накидка, служащая защитой от непогоды и небольшим кровом во время привалов. Довольно прочный и дополнительно прошит асбестовой нитью, чем обесчпечивается огнеупорность материала.
+				<br><span id="ability" style="color: #40a53a;">Вещмешок</span> — Простенький, но вместительный вещмешок. Изрядно изношен, но послужит ещё очень долго. Хранит в себе запасной комплект одежды и белья, еду на сутки, набор первой помощи и всякую мелочь: набор для шитья, медное кольцо, несколько бронзовых монет и комплект личной гигиены
+				<br><span id="ability" style="color: #40a53a;">Ремень с подсумком</span> — кожаный ремень с металлической пряжкой. Имеет встроенный подсумок и крепление для ножен. Крепится на пояс.
+				<br><span id="ability" style="color: #40a53a;">Нож К63</span> — боевой нож из качественной стали, покрытой защитой от ржавчины. Заточка двухсторонная. <br>Имеется заметное сужение ближе к кончику
+				 <br>Длина клинка :16см.<br>Общая длина: 27см.
+				 <br><span id="ability" style="color: #40a53a;">Одежда</span>: <br>Армейские ботинки.<br>Брюки из плотной хлопковой ткани, оснащенный карманами и уплотнителем на коленях для амортизации. <br>Простая льняная рубашка бледно голубого цвета.
+			</p>
+		</div>
+		<h3 style="margin-top: 10vh;">
+			Физические показатели
+		</h3>
+		<div class="blyat">
+			<hr id="allhr">
+		</div>
+		<div class="chcard">
+			<p class="nmp" style="text-align: left;">
+				<br><span id="ability" style="color: #a5973a;">Сила на подъем</span> — максимальный вес на одну руку — 46кг. Обеими руками, становым хватом способен поднять до 120кг. Больше с подключением всей мускулатуры.
+				<br><span id="ability" style="color: #a5973a;">Скорость</span> — в кратковременном спринте развивает 65км/ч. Способен довольно долго бежать на скорости 45-50км/ч. Скорость ударов руки равно 18м/с
+				<br><span id="ability" style="color: #a5973a;">Время реакции</span> — 60м/с для рефлексов. До 110м/с для реакции.
+			</p>
+		</div>
+
+
+		<div class="copy">©Гексанитрогексаазаизовюрцитан</div>
+	</body>
+
+	</html>
